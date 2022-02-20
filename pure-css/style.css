@@ -1,0 +1,44 @@
+/* Element Selector */
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ID Selector */
+/* Select element at id = heading2 */
+#heading2 {
+  font-weight: 900;
+  color: #ff7f00;
+}
+
+/* Class Selector */
+/* .{classname} select element by classname */
+.container {
+  height: 250px;
+  width: 250px;
+
+  background-color: rgb(102, 204, 255);
+
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: #000000 */
+  border: 1px solid #000000;
+}
+
+/* Universal Selector */
+* {
+  font-size: 20px;
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* Grouping Selector */
+/* h3, h4, span => style = ... */
+h3,
+h4,
+.para-g {
+  width: 100%;
+  text-align: right;
+  font-style: italic;
+  color: darkred;
+}
