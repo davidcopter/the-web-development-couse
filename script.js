@@ -1,62 +1,75 @@
-console.log('Hello, World');
+// Data types
+// String
+'wqdwqdwqdqwd';
+'12321321323';
 
-// . dot notation
-document.getElementById('heading1').innerHTML = 'Hi, Im copter';
+// ' '(single);
+// ' '(double);
 
-// Variable
-// 1. Var
-var name = 'Copter'; // string
-var distance = 0; // number
-var currency = 1.234; // number
-console.log(name);
-console.log('Copter');
+const message = 'Hello world';
+const message1 = "I'm superman";
+const message2 = "I'm superman"; // 'I' ... m superman'
+const message3 = 'I"m superman';
 
-console.log(distance, currency);
-console.log(0, 1.234);
+// airbnb
 
-// Trick
-console.log('This is a distance value: ', distance);
-// console.log("Distance: ", 1.234);
-console.log(currency);
+var carName = 'Volvo XC60';
 
-// 2. Let
-let city = 'New York';
-console.log(city); // New York
-city = 'Bangkok';
-console.log(city); // Bangkok
+// Number
+1234;
+0.123;
+1000000 - 1 - 10.12;
 
-// * variable scope
+// Boolean
+true;
+false;
 
-// Const
-const color = 'Red';
-console.log('Color: ', color); // Red
-// color = 'Yellow';
-// console.log('Color: ', color); // Error:::
-const PI = 3.14;
+// Array [(element)...]
+// var cities = ['a', 'b', 'c']
+// let cities = ['a', 'b', 'c']
+const cities = ['a', 'b', 'c']; // 3
+// [(index: 0)'a', (index: 1)'b', (index: 2)'c']
+console.log('Cities: ', cities);
+// index
+console.log('Cities 0: ', cities[0]);
 
-// Trick;
-// camelCase
-const todayIsMonday = 0; // number
-const isMonday = false; // Boolean
-console.log('isMonday: ', isMonday);
+// Objects (key: value)
+const person = {
+  name: 'John',
+  age: 34,
+  isFree: false,
+};
+console.log('Person: ', person);
+/// dot notaion (.): obj.key
+console.log('Person Name:', person.name);
+console.log('Person Age: ', person.age);
+// bracket Notation ([...])
+console.log('Person Name ([..]): ', person['name']);
 
-document.getElementById('heading1').innerHTML = color;
+// Trick ************************************************
+// Array Of Objects [(element), (element), (element)]
+// [{}, {}, {}]
+const students = [
+  { name: 'David', age: 19 }, // 0
+  { name: 'Louise', age: 24 }, // 1
+  { name: 'Christ', age: 30 }, // 2
+  { name: 'David', age: null }, // 3
+];
+console.log('Students: ', students);
+console.log('Students: ', students[1]);
+// { name: 'Louise', age: 24 }
+// { name: 'Louise', age: 24 }.age = 24
+// { name: 'Louise', age: 24 }.xyz = undefinded
+console.log('Students age: ', students[1].age);
+console.log('Students xyz: ', students[1].xyz);
 
-// Operators
-// Arithmetic Operators
-console.log(1 + 1);
+// undefined
+var water = undefined;
+// null
+const str = null; // next  str = "a"
 
-const thb = 100;
-const usd = 35;
-const total = thb * usd;
-console.log('My money is: ', total);
-console.log('My money is: ', total - 300);
-console.log('My money is: ', total + 3000);
-
-// Assignment Operators
-let a = 8; // a = 8
-a += 10; // a = a + 10 => 18
-a += 15; // a = a + 15 => 33
-a -= 3; // a = a - 3 => 30
-
-console.log('A: ', a);
+// trick
+// check var type
+console.log('Type of students is ', typeof students);
+console.log('Type of message is ', typeof message);
+console.log('Type of person age is ', typeof person.age);
